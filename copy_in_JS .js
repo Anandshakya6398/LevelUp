@@ -48,11 +48,5 @@ console.log(arr); // [100, 2, [6, 7, [9, 10]], 4, 5]
 // Conclusion: Use the spread operator or Array.from for shallow copies,
 // and JSON methods or libraries like Lodash for deep copies.
 // Remember that shallow copies are sufficient for flat arrays,
-// but deep copies are necessary for nested structures to avoid unintended side effects.
-// Note: The above code is a demonstration of shallow and deep copying in JavaScript.
-// It is not meant to be executed as a complete program.
-// The comments explain the concepts of shallow and deep copying in JavaScript arrays.
-// The code demonstrates how to create shallow and deep copies of arrays in JavaScript.
-// It also shows how modifying the copied arrays affects the original array.
-// The code is structured to illustrate the differences between shallow and deep copying
-// and how to handle nested arrays and objects.
+
+
