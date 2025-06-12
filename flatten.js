@@ -19,5 +19,6 @@ function flattenArrayUtil(inputArray) { // Function to flatten an array
     return result;
 }
 // Test the function
-const flattenedArray = flattenArrayUtil(inputArray); // Call the function with the input array 
+const flattenedArray = flattenArrayUtil(inputArray); 
+// Call the function with the input array
 console.log("flattend Array", flattenedArray);
