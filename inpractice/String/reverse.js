@@ -15,8 +15,8 @@ let str = "Hello, World!";
 // console.log(replacedStr); // Output: JavaScript, World!
 
 // find the index of a substring
-// let index = str.indexOf("World");
-// console.log(index); // Output: 7
+let index = str.indexOf("World");
+console.log(index); 
 
 // check if a string contains a substring
 // let contains = str.includes("World");
@@ -34,3 +34,8 @@ console.log(joinedStr); // Output: Hello, World!
 let whitespaceStr = "   Hello, World!   ";
 let trimmedStr = whitespaceStr.trim();
 console.log(trimmedStr); // Output: Hello, World!
+
+// repeat a string
+let repeatedStr = str.repeat(2);
+console.log(repeatedStr); // Output: Hello, World!Hello, World!
+
