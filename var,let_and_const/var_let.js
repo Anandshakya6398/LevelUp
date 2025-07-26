@@ -19,7 +19,7 @@ console.log("a",a); // 10
 }
 console.log("a",a); // 10
 
-
+ // illegal shadowing with let
 let c=10;
 console.log("c",c); // 10
 {
