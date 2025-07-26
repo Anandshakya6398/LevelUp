@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Outer scope</h1>
+</body>
+<script>
+    console.log("12", a);
+    var a = 10;
+    console.log("14", a);
+    function fn(){
+        console.log("16", a);
+        a++;
+        // console.log("18", a);
+        function inner(){
+            console.log("20", a);                   
+            var a = 20;
+            console.log("22", a);
+        }
+        inner();
+    }
+    console.log("26", a);
+    fn();
+    console.log("29", a);
+</script>
+</html>
