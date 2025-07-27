@@ -10,3 +10,9 @@ let cap = {
     }
 }
 cap.sayHi(); // method call 
+
+
+ // check typeof operator
+let a = 10;
+console .log(typeof a); // number
+console.log(typeof typeof a); // string
