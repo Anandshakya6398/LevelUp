@@ -20,7 +20,20 @@
 
 //<<<<<<<<<<<<method 2>>>>>>>>>>>>>>>>>>>>
 
-let str = "Hll, Wrld!";
+let str = "Hll, World!";
 let regexForVowel = /[aeiouAEIOU]/g; 
 let count = (str.match(regexForVowel) || []).length;
 console.log(count);
+
+// method 3 using for of loop
+function findVowels(str) {
+    let count = 0;
+    const vowels = 'aeiouAEIOU';
+    for (let char of str) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(findVowels("Hello, World!"));
