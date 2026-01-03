@@ -23,7 +23,7 @@ console.log(largest);
 // find largest value in array 
 console.log("maximum value method 2")
 const getLargestValue = (arr3) => {
-    let largestvalue = 0;
+    let largestvalue =arr[0] ;
     for (let i = 0; i < arr3.length; i++) {
         if (arr3[i] > largestvalue) {
             largestvalue = arr3[i];
@@ -33,3 +33,8 @@ const getLargestValue = (arr3) => {
 };
 const arr3 = [5, 3, 9, 1, 7];
 console.log(getLargestValue(arr3)); // Output: 9
+
+// find the minimum value in array
+// console.log("minimum value method 2")
+// const getMinimumValue = (arr4) => {
+
