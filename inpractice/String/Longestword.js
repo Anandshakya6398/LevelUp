@@ -9,3 +9,12 @@ console.log(findLongetstWord("The quick brown fox jumped over the lazy dog"));
 //     }
 //     return longestWord; // Return the longest word found
 // }   
+
+// methode 2 using reduce
+function findLongetstWord(str) {
+    let words = str.split(' '); // Split the string into an array of words  
+    let longestWord = words.reduce((longest, currentWord) => {
+        return currentWord.length > longest.length ? currentWord : longest;
+    }, '');
+    return longestWord; // Return the longest word found
+}
