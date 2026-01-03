@@ -35,6 +35,16 @@ const arr3 = [5, 3, 9, 1, 7];
 console.log(getLargestValue(arr3)); // Output: 9
 
 // find the minimum value in array
-// console.log("minimum value method 2")
-// const getMinimumValue = (arr4) => {
+console.log("minimum value method 2")
+const getMinimumValue = (arr4) => {
+    let minvalue =arr4[0] ;
+    for (let i = 0; i < arr4.length; i++) {
+        if (arr4[i] < minvalue) {
+            minvalue = arr4[i];
+        }       
+    }
+    return minvalue;
+};
+const arr4 = [5, 3, 9, 1, 7];
+console.log(getMinimumValue(arr4));
 
